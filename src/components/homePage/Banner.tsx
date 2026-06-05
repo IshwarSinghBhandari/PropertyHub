@@ -47,7 +47,27 @@ function Banner() {
                     <p className="mt-4 text-base sm:text-lg text-slate-200/90 max-w-xl mx-auto font-light">
                         Buy, Rent & Invest in premium properties across India.
                     </p>
+
+                    {/* Numbers ------------- */}
+                    <div className="flex flex-row justify-center items-center gap-8 md:gap-16 mt-8 text-white text-center">
+                        <div>
+                            <p className="text-2xl md:text-3xl font-extrabold tracking-tight">10K+</p>
+                            <p className="text-[11px] md:text-xs text-slate-300 font-medium mt-0.5 uppercase tracking-wider">Properties</p>
+                        </div>
+                        <div className="w-px h-6 bg-white/20" />
+                        <div>
+                            <p className="text-2xl md:text-3xl font-extrabold tracking-tight">250+</p>
+                            <p className="text-[11px] md:text-xs text-slate-300 font-medium mt-0.5 uppercase tracking-wider">Builders</p>
+                        </div>
+                        <div className="w-px h-6 bg-white/20" />
+                        <div>
+                            <p className="text-2xl md:text-3xl font-extrabold tracking-tight">15+</p>
+                            <p className="text-[11px] md:text-xs text-slate-300 font-medium mt-0.5 uppercase tracking-wider">Cities</p>
+                        </div>
+                    </div>
                 </div>
+
+
 
                 {/* filter section ---------------------------------- */}
                 <Card className="w-full backdrop-blur-xl bg-white/95 border border-white/20 shadow-[0_32px_64px_-16px_rgba(0,0,0,0.3)] rounded-[2rem] max-md:rounded-[1rem] overflow-hidden">
@@ -80,19 +100,19 @@ function Banner() {
                                     </div>
 
                                     {/* Main Action Trigger */}
-                                    <Button
+                                    {/* <Button
                                         onClick={handleSearch}
                                         className="h-12 md:h-16 w-full md:w-auto bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-8 rounded-2xl shadow-md shadow-emerald-600/10 transition-all flex items-center justify-center gap-2 text-base shrink-0"
                                     >
                                         <Search className="h-5 w-5 stroke-[2.5]" />
                                         <span>Search Properties</span>
-                                    </Button>
+                                    </Button> */}
                                 </div>
 
                                 {/* BOTTOM ROW: Toggle Tabs & BHK Filter Selectors */}
                                 <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pt-2 border-t border-slate-100">
 
-                                    {/* Segment Switcher (Buy/Rent) */}
+                                    {/* buy/rent ----------------*/}
                                     <div className="shrink-0">
                                         <TabsList className="h-11 bg-slate-100 p-1 rounded-xl grid grid-cols-2 w-full sm:w-[180px]">
                                             <TabsTrigger
@@ -146,23 +166,7 @@ function Banner() {
                     </CardContent>
                 </Card>
 
-                {/* Statistics Layout Grid Counter */}
-                <div className="flex flex-row justify-center items-center gap-8 md:gap-16 mt-12 text-white text-center">
-                    <div>
-                        <p className="text-2xl md:text-3xl font-extrabold tracking-tight">10K+</p>
-                        <p className="text-[11px] md:text-xs text-slate-300 font-medium mt-0.5 uppercase tracking-wider">Properties</p>
-                    </div>
-                    <div className="w-px h-6 bg-white/20" />
-                    <div>
-                        <p className="text-2xl md:text-3xl font-extrabold tracking-tight">250+</p>
-                        <p className="text-[11px] md:text-xs text-slate-300 font-medium mt-0.5 uppercase tracking-wider">Builders</p>
-                    </div>
-                    <div className="w-px h-6 bg-white/20" />
-                    <div>
-                        <p className="text-2xl md:text-3xl font-extrabold tracking-tight">15+</p>
-                        <p className="text-[11px] md:text-xs text-slate-300 font-medium mt-0.5 uppercase tracking-wider">Cities</p>
-                    </div>
-                </div>
+
 
             </div>
         </section>
