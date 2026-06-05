@@ -1,7 +1,6 @@
 "use client"
-import React, { useRef, useState } from 'react'
-import { Search, MapPin } from 'lucide-react'
-import { Button } from "@/components/ui/button"
+import { useRef, useState } from 'react'
+import {  MapPin } from 'lucide-react'
 import { Input } from "@/components/ui/input"
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Badge } from '@/components/ui/badge'
@@ -28,7 +27,7 @@ function Banner() {
                 backgroundPosition: "center",
             }}
         >
-            {/* Dark Overlays */}
+            {/* Dark overlays -----------------------*/}
             <div className="absolute inset-0 bg-black/40" />
             <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/30 to-black/70" />
 
@@ -99,17 +98,10 @@ function Banner() {
                                         </div>
                                     </div>
 
-                                    {/* Main Action Trigger */}
-                                    {/* <Button
-                                        onClick={handleSearch}
-                                        className="h-12 md:h-16 w-full md:w-auto bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-8 rounded-2xl shadow-md shadow-emerald-600/10 transition-all flex items-center justify-center gap-2 text-base shrink-0"
-                                    >
-                                        <Search className="h-5 w-5 stroke-[2.5]" />
-                                        <span>Search Properties</span>
-                                    </Button> */}
+                        
                                 </div>
 
-                                {/* BOTTOM ROW: Toggle Tabs & BHK Filter Selectors */}
+                                {/* BOTTOM ROW : toggle tabs & BHK filter selectors ---------------- */}
                                 <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pt-2 border-t border-slate-100">
 
                                     {/* buy/rent ----------------*/}

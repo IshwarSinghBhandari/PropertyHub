@@ -8,7 +8,11 @@
     "bhk": 4,
     "area": 3500,
     "type": "buy",
-    "image": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=800&q=80"
+    ],
     "amenities": ["Infinity Pool", "Private Gym", "Valet Parking", "24/7 Concierge"],
     "featured": true
   },
@@ -21,7 +25,10 @@
     "bhk": 3,
     "area": 2800,
     "type": "buy",
-    "image": "https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=800&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1613977257363-707ba9348227?auto=format&fit=crop&w=800&q=80"
+    ],
     "amenities": ["Private Garden", "Covered Parking", "Multi-tier Security"],
     "featured": true
   },
@@ -34,7 +41,11 @@
     "bhk": 2,
     "area": 1200,
     "type": "rent",
-    "image": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=800&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=800&q=80"
+    ],
     "amenities": ["Clubhouse Gym", "High-speed Lifts", "Intercom", "Swimming Pool"],
     "featured": false
   },
@@ -47,7 +58,10 @@
     "bhk": 1,
     "area": 650,
     "type": "rent",
-    "image": "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+    ],
     "amenities": ["High-Speed WiFi", "CCTV Security", "Power Backup"],
     "featured": false
   },
@@ -60,7 +74,11 @@
     "bhk": 3,
     "area": 2400,
     "type": "buy",
-    "image": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&w=800&q=80"
+    ],
     "amenities": ["Rooftop Pool", "Reserved Parking", "State-of-the-art Gym"],
     "featured": true
   },
@@ -73,7 +91,10 @@
     "bhk": 2,
     "area": 1400,
     "type": "buy",
-    "image": "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=800&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=800&q=80"
+    ],
     "amenities": ["Kids Play Area", "Stack Parking", "Jogging Track"],
     "featured": false
   },
@@ -86,7 +107,11 @@
     "bhk": 4,
     "area": 3200,
     "type": "buy",
-    "image": "https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=800&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1600210492493-0946911123ea?auto=format&fit=crop&w=800&q=80"
+    ],
     "amenities": ["Private Gym", "Temperature Controlled Pool", "Smart Security"],
     "featured": true
   },
@@ -99,7 +124,10 @@
     "bhk": 2,
     "area": 1100,
     "type": "rent",
-    "image": "https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=800&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=800&q=80"
+    ],
     "amenities": ["Landscaped Gardens", "Stilt Parking", "Service Lift"],
     "featured": false
   },
@@ -112,7 +140,11 @@
     "bhk": 3,
     "area": 1700,
     "type": "buy",
-    "image": "https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=800&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1554995207-c18c203602cb?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80"
+    ],
     "amenities": ["Clubhouse", "Gas Pipeline", "24/7 Security Manned Gates", "EV Charging Point"],
     "featured": true
   },
@@ -125,8 +157,339 @@
     "bhk": 1,
     "area": 750,
     "type": "rent",
-    "image": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=800&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?auto=format&fit=crop&w=800&q=80"
+    ],
     "amenities": ["Video Door Phone", "High-speed Elevators", "Fire Fighting System"],
+    "featured": false
+  },
+  {
+    "id": "prop-011",
+    "title": "Spacious Suburban Duplex",
+    "description": "Generous and modern duplex in a quiet neighborhood with great connectivity.",
+    "price": 32000000,
+    "location": "Kandivali West",
+    "bhk": 3,
+    "area": 1950,
+    "type": "buy",
+    "images": [
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1600573472591-ee6b68d14c68?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": ["Private Terrace", "Modular Kitchen", "Power Backup"],
+    "featured": false
+  },
+  {
+    "id": "prop-012",
+    "title": "High-End Corporate Rental",
+    "description": "Fully serviced, upscale apartment curated specifically for expats and executives.",
+    "price": 140000,
+    "location": "BKC (Bandra Kurla Complex)",
+    "bhk": 2,
+    "area": 1350,
+    "type": "rent",
+    "images": [
+      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1560185127-6a2806647f81?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1560184897-ae75f418493e?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": ["Housekeeping", "Meeting Room Access", "Gymnasium", "Lounge"],
+    "featured": true
+  },
+  {
+    "id": "prop-013",
+    "title": "Charming Affordable Flat",
+    "description": "Cozy residence located in an amenity-rich locality, close to markets and schools.",
+    "price": 28000,
+    "location": "Thane West",
+    "bhk": 1,
+    "area": 620,
+    "type": "rent",
+    "images": [
+      "https://images.unsplash.com/photo-1536376072261-38c75010e6c9?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1502672016927-94bd26073098?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": ["24/7 Water Supply", "Security Guard", "Intercom Facility"],
+    "featured": false
+  },
+  {
+    "id": "prop-014",
+    "title": "Grand Ultra-Luxury Estate",
+    "description": "Magnificent sprawling mansion featuring absolute privacy and custom artisan architectural details.",
+    "price": 650000000,
+    "location": "Malabar Hill",
+    "bhk": 5,
+    "area": 6800,
+    "type": "buy",
+    "images": [
+      "https://images.unsplash.com/photo-1512915922686-57c11dde9b6b?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": ["Private Infinity Pool", "Home Theatre", "Chef's Kitchen", "Wine Cellar", "Banquet Hall"],
+    "featured": true
+  },
+  {
+    "id": "prop-015",
+    "title": "Chic Urban Living",
+    "description": "Beautifully styled modern condo perfect for dynamic couples and creators.",
+    "price": 62000,
+    "location": "Chembur",
+    "bhk": 2,
+    "area": 980,
+    "type": "rent",
+    "images": [
+      "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1617806118233-18e1db207f62?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": ["Yoga Studio", "Terrace Garden", "Biometric Lock"],
+    "featured": false
+  },
+  {
+    "id": "prop-016",
+    "title": "Contemporary Family Apartment",
+    "description": "Sunlit and cross-ventilated residence offering high utility design layouts.",
+    "price": 18500000,
+    "location": "Navi Mumbai, Vashi",
+    "bhk": 3,
+    "area": 1550,
+    "type": "buy",
+    "images": [
+      "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": ["Clubhouse", "Indoor Games Room", "Kids Pool"],
+    "featured": false
+  },
+  {
+    "id": "prop-017",
+    "title": "Boutique Art-Deco Apartment",
+    "description": "Meticulously restored high-ceiling apartment that blends old-world heritage with modern tech.",
+    "price": 120000000,
+    "location": "Colaba",
+    "bhk": 2,
+    "area": 1400,
+    "type": "buy",
+    "images": [
+      "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1600566752355-35792bedcfea?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1618219908412-a29a1bb7b86e?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": ["Automated Smart Lighting", "Italian Marble Floors", "Prime Location Tag"],
+    "featured": true
+  },
+  {
+    "id": "prop-018",
+    "title": "Sky Lounge Residency",
+    "description": "Breathtaking premium apartment equipped with floor-to-ceiling French windows.",
+    "price": 110000,
+    "location": "Santacruz West",
+    "bhk": 3,
+    "area": 1800,
+    "type": "rent",
+    "images": [
+      "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": ["Sky Lounge Access", "High-speed Elevators", "Dedicated Concierge"],
+    "featured": false
+  },
+  {
+    "id": "prop-019",
+    "title": "Strategic Micro-Apartment",
+    "description": "Functional layout planned perfectly for single working professionals seeking short commutes.",
+    "price": 32000,
+    "location": "Goregaon East",
+    "bhk": 1,
+    "area": 580,
+    "type": "rent",
+    "images": [
+      "https://images.unsplash.com/photo-1493809842364-78817add7ffb?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": ["24/7 Power Backup", "Gym Access", "Retail Stores On Ground Floor"],
+    "featured": false
+  },
+  {
+    "id": "prop-020",
+    "title": "Lavish Sea-Facing Residence",
+    "description": "Wake up to soothing ocean waves. Grand scale spaces configured for true elite lifestyles.",
+    "price": 410000000,
+    "location": "Juhu",
+    "bhk": 4,
+    "area": 4200,
+    "type": "buy",
+    "images": [
+      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": ["Private Beach Path Access", "Infinity Deck", "Automated Security Guards", "Personal Elevator Block"],
+    "featured": true
+  },
+  {
+    "id": "prop-021",
+    "title": "Serene Greenery Haven",
+    "description": "Peaceful rental flat tucked away from city noise, offering beautiful panoramic views of internal parks.",
+    "price": 55000,
+    "location": "Mulund West",
+    "bhk": 2,
+    "area": 1050,
+    "type": "rent",
+    "images": [
+      "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": ["Jogging Track", "Senior Citizen Area", "Badminton Court"],
+    "featured": false
+  },
+  {
+    "id": "prop-022",
+    "title": "Sleek Executive Suite",
+    "description": "Stylish interior updates make this high-rise apartment stand out elegantly.",
+    "price": 85000,
+    "location": "Mahim",
+    "bhk": 2,
+    "area": 1150,
+    "type": "rent",
+    "images": [
+      "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1617806118233-18e1db207f62?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": ["Video Intercom", "Rooftop Stargazing Deck", "Piped Gas Connection"],
+    "featured": false
+  },
+  {
+    "id": "prop-023",
+    "title": "Elite Duplex Penthouse",
+    "description": "A magnificent two-floor configuration that defines the absolute peak of high-rise living infrastructure.",
+    "price": 380000000,
+    "location": "Tardeo",
+    "bhk": 5,
+    "area": 5100,
+    "type": "buy",
+    "images": [
+      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": ["Private Rooftop Pool", "Private Butler Service", "4 Car Parking Spaces"],
+    "featured": true
+  },
+  {
+    "id": "prop-024",
+    "title": "Spacious Multi-Gen Home",
+    "description": "Massive floor plan layout ensuring structural adaptability for big joint families.",
+    "price": 52000000,
+    "location": "Sion",
+    "bhk": 4,
+    "area": 2600,
+    "type": "buy",
+    "images": [
+      "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": ["Vastu Compliant Layout", "2 Master Bedrooms", "Kids Playground"],
+    "featured": false
+  },
+  {
+    "id": "prop-025",
+    "title": "Modernist Studio Flat",
+    "description": "Brilliantly optimized, Scandinavian-inspired cozy studio with smart hidden storage furniture built-in.",
+    "price": 38000,
+    "location": "Bandra East",
+    "bhk": 1,
+    "area": 500,
+    "type": "rent",
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1536376072261-38c75010e6c9?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": ["Smart Automated Lock", "Community Workspace Access", "Laundromat Access"],
+    "featured": false
+  },
+  {
+    "id": "prop-026",
+    "title": "Chic Skyline View Apartment",
+    "description": "Unmatched visibility parameters over city skylines via massive continuous running deck spaces.",
+    "price": 165000,
+    "location": "Parel",
+    "bhk": 3,
+    "area": 2100,
+    "type": "rent",
+    "images": [
+      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1560185127-6a2806647f81?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": ["Infinity Sky Deck Pool", "Pilates Studio Room", "Resident Lounge Area"],
+    "featured": true
+  },
+  {
+    "id": "prop-027",
+    "title": "Prime Vibrant Residential Flat",
+    "description": "Family property located right inside a premium high-end township project framework.",
+    "price": 27500000,
+    "location": "Kanjurmarg",
+    "bhk": 2,
+    "area": 1180,
+    "type": "buy",
+    "images": [
+      "https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1554995207-c18c203602cb?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": ["Gigantic Clubhouse Area", "Olympic-sized Swimming Pool", "Hypermarket In Building"],
+    "featured": false
+  },
+  {
+    "id": "prop-028",
+    "title": "Cozy Suburban Escapade",
+    "description": "Extremely peaceful layout ideal for people wanting premium connectivity with low baseline noise levels.",
+    "price": 48000,
+    "location": "Dahisar East",
+    "bhk": 2,
+    "area": 950,
+    "type": "rent",
+    "images": [
+      "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1493809842364-78817add7ffb?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": ["24/7 Monitored CCTV Security", "Beautiful Jogging Path", "Elevator Power Infrastructure Backup"],
+    "featured": false
+  },
+  {
+    "id": "prop-029",
+    "title": "Grand Regal Penthouse Space",
+    "description": "Double height ceilings with customized configuration setups to offer unmatched luxury real-estate statements.",
+    "price": 540000000,
+    "location": "Cuffe Parade",
+    "bhk": 5,
+    "area": 6200,
+    "type": "buy",
+    "images": [
+      "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1613977257363-707ba9348227?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1512915922686-57c11dde9b6b?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": ["Helipad Building Access", "Private Temperature-Controlled Plunge Pool", "Ultra-Premium Concierge Group"],
+    "featured": true
+  },
+  {
+    "id": "prop-030",
+    "title": "Sunlit Corporate Apartment",
+    "description": "Brimming with bright sunlight setups throughout the day, this executive layout sits right over premium shopping arcades.",
+    "price": 125000,
+    "location": "Charni Road",
+    "bhk": 3,
+    "area": 1650,
+    "type": "rent",
+    "images": [
+      "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1560184897-ae75f418493e?auto=format&fit=crop&w=800&q=80"
+    ],
+    "amenities": ["Exclusive Rooftop Jogging Grid", "Advanced Water Softener System", "Reserved Multi-stilt Car Deck Parking"],
     "featured": false
   }
 ]
