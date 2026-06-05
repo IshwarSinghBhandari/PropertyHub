@@ -7,7 +7,8 @@ export interface Property {
   bhk: number
   area: number
   type: "buy" | "rent"
-  image: string
+  images: string
   amenities: string[]
   featured: boolean
+  createdAt: string
 }
