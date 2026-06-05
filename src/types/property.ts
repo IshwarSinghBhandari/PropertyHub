@@ -7,8 +7,12 @@ export interface Property {
   bhk: number
   area: number
   type: "buy" | "rent"
-  images: string
+  images: string[]
   amenities: string[]
   featured: boolean
   createdAt: string
+}
+
+export interface PropertyCardProps {
+  property: Property;
 }
