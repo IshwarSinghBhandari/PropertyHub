@@ -12,13 +12,19 @@ export function Header() {
 
 
     return (
-        <header className="sticky top-0 z-50 w-full bg-[#02182b]/95 backdrop-blur-md border-b border-white/5 text-white shadow-lg">
+        <header className="fixed top-0 z-50 w-full backdrop-blur-md border-b border-white/5 text-white">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex items-center justify-between h-20">
 
                     {/* logo ------------ */}
                     <Link href="/" className="flex items-center gap-3 group shrink-0 select-none font-sans">
-                        <Image src="/logo.png" alt="Logo" width={200} height={100} />
+                        <Image
+                            src="/logo.png"
+                            alt="Logo"
+                            width={180}
+                            height={90}
+                            className="w-[140px] sm:w-[160px] md:w-[180px] h-auto"
+                        />
                     </Link>
 
                     {/* Desktop navigation links ------------- */}
