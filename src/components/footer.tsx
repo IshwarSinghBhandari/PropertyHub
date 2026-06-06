@@ -93,7 +93,7 @@ function Footer() {
                     {/* col 1: brand info & social  */}
                     <div className="flex flex-col gap-5">
                         <Link href="/" className="inline-block transition-opacity hover:opacity-90 shrink-0">
-                            <Image src="/logo.png" alt="PropertyHub Logo" width={150} height={40} className="h-auto w-auto" priority />
+                            <Image src="/images/logo.png" alt="PropertyHub Logo" width={150} height={40} className="h-auto w-auto" priority />
                         </Link>
                         <p className="text-sm text-slate-400 leading-relaxed">
                             Discover premium real estate ecosystems that elevate living standards. Connecting buyers, sellers, and elite modern properties globally.

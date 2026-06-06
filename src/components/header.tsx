@@ -30,7 +30,7 @@ export function Header() {
                     {/* logo ------------ */}
                     <Link href="/" className="flex items-center gap-3 group shrink-0 select-none font-sans">
                         <Image
-                            src="/logo.png"
+                            src="/images/logo.png"
                             alt="Logo"
                             width={180}
                             height={90}

@@ -20,3 +20,17 @@ export const getProperties = async (filters?: Filters) => {
 
   return res.json();
 };
+
+export const getPropertyById = async (id: string) => {
+  const query = new URLSearchParams();
+    query.append("id", id);
+  const url = `/api/properties?${query.toString()}`;
+
+  const res = await fetch(url);
+
+  if (!res.ok) {
+    throw new Error("Failed to fetch properties");
+  }
+
+  return res.json();
+};

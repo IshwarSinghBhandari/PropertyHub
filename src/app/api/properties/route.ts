@@ -4,10 +4,25 @@ import properties from "@/data/properties.json";
 export async function GET(req: Request) {
   const { searchParams } = new URL(req.url);
 
+  const id = searchParams.get("id");
   const location = searchParams.get("location");
   const bhk = searchParams.get("bhk");
   const type = searchParams.get("type");
 
+  //  Get single property by ID
+  if (id) {
+    const property = properties.find((p) => p.id === id);
+
+    if (!property) {
+      return Response.json(
+        { message: "Property not found" },
+        { status: 404 }
+      );
+    }
+
+    return Response.json(property);
+  }
+  //  Get filtered list
   let result = properties;
 
   if (location) {

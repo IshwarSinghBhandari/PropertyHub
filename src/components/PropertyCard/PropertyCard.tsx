@@ -12,15 +12,10 @@ import {
 } from "lucide-react";
 import { PropertyCardProps } from "@/types/property";
 import { TYPE_OPTIONS } from "@/constants/filter";
+import { formatPrice } from "@/utils/formatters";
 
 export function PropertyCard({ property }: PropertyCardProps) {
   const [isFavorite, setIsFavorite] = useState(false);
-
-  const formattedPrice = new Intl.NumberFormat("en-IN", {
-    style: "currency",
-    currency: "INR",
-    maximumFractionDigits: 0,
-  }).format(property.price);
 
   const bhkText = property.bhk > 0 ? `${property.bhk} BHK` : "Plot";
 
@@ -81,7 +76,7 @@ export function PropertyCard({ property }: PropertyCardProps) {
             <div className="absolute left-4 bottom-4">
               <div className="px-4 py-2.5 rounded-2xl backdrop-blur-xl bg-white/15 border border-white/20 shadow-2xl">
                 <div className="text-white font-bold text-[16px]">
-                  {formattedPrice}
+                  {formatPrice(property.price)}
                   {property.type === "rent" && (
                     <span className="text-xs font-medium ml-1">/month</span>
                   )}
