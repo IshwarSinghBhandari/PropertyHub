@@ -1,5 +1,7 @@
 # PropertyHub 🏠
 
+> **Important:** The `main` branch contains the latest codebase and is the version currently deployed on Vercel.
+
 A responsive real estate property listing portal built with Next.js, TypeScript, and Tailwind CSS.
 
 ## Live Demo
