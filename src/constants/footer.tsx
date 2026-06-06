@@ -1,15 +1,15 @@
 export const LINK_GROUP_1 = [
-    { name: "Apartments for Sale", href: "/buy" },
-    { name: "Villas for Sale", href: "/buy" },
-    { name: "Homes for Rent", href: "/rent" },
-    { name: "Offices for Rent", href: "/rent" },
+    { name: "Apartments for Sale", href: "/#" },
+    { name: "Villas for Sale", href: "/#" },
+    { name: "Homes for Rent", href: "/#" },
+    { name: "Offices for Rent", href: "/#" },
 ]
 
 export const LINK_GROUP_2 = [
-    { name: "About Us", href: "/about" },
-    { name: "Our Agents", href: "/agents" },
-    { name: "Latest News", href: "/news" },
-    { name: "Contact Us", href: "/contact" },
+    { name: "About Us", href: "/#" },
+    { name: "Our Agents", href: "/#" },
+    { name: "Latest News", href: "/#" },
+    { name: "Contact Us", href: "/#" },
 ]
 
 export const SOCIAL_LINK = [

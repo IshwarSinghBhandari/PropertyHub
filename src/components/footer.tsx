@@ -51,7 +51,7 @@ function Footer() {
                         </p>
                     </div>
 
-                    <div className="flex items-center min-w-[320px] lg:min-w-[420px]">
+                    <div className="flex items-center min-w-[320px] lg:min-w-105">
                         <form onSubmit={handleSubscribe} className="w-full flex flex-col sm:flex-row items-stretch gap-2">
                             <div className="relative flex-1">
                                 <input

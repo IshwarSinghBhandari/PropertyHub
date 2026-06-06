@@ -9,12 +9,23 @@ import { NAVBAR_LINK } from "@/constants/header"
 
 export function Header() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+    const [scrolled, setScrolled] = useState(false);
 
+    React.useEffect(() => {
+        const handleScroll = () => {
+            setScrolled(window.scrollY > 20);
+        };
 
+        handleScroll();
+
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
     return (
-        <header className="fixed top-0 z-50 w-full backdrop-blur-md border-b border-white/5 text-white">
+        <header
+            className={`fixed top-0 z-50 w-full backdrop-blur-xl  text-white transition-colors duration-300 ${scrolled ? "bg-gray-500/40 " : "bg-transparent"}`}   >
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="flex items-center justify-between h-20">
+                <div className="flex items-center justify-between h-16 sm:h-20 ">
 
                     {/* logo ------------ */}
                     <Link href="/" className="flex items-center gap-3 group shrink-0 select-none font-sans">
@@ -23,7 +34,7 @@ export function Header() {
                             alt="Logo"
                             width={180}
                             height={90}
-                            className="w-[140px] sm:w-[160px] md:w-[180px] h-auto"
+                            className="w-35 sm:w-40 md:w-45 h-auto"
                         />
                     </Link>
 
@@ -79,7 +90,7 @@ export function Header() {
 
             {/* Mobile menu ------------------- */}
             {mobileMenuOpen && (
-                <div className="md:hidden bg-[#02182b] border-t border-white/5 py-4 px-6 flex flex-col gap-5 max-h-[calc(100vh-5rem)] overflow-y-auto shadow-2xl animate-in fade-in slide-in-from-top-4 duration-200 font-sans">
+                <div className="md:hidden backdrop-blur-xl bg-gray-500/40 border-t border-white/5 py-4 px-6 flex flex-col gap-5 max-h-[calc(100vh-5rem)] overflow-y-auto shadow-2xl animate-in fade-in slide-in-from-top-4 duration-200 font-sans">
                     <nav className="flex flex-col gap-4">
                         {NAVBAR_LINK.map((link) => (
                             <Link
