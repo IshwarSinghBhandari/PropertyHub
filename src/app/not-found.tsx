@@ -9,7 +9,7 @@ export default function NotFound() {
   const router = useRouter()
 
   return (
-    <div className="flex-1 flex flex-col items-center justify-center min-h-[70vh] bg-slate-50 dark:bg-[#090f1c] px-4 py-16 text-center font-sans transition-colors duration-300">
+    <div className="flex-1 flex flex-col items-center justify-center min-h-[70vh] bg-slate-50 dark:bg-[#090f1c] px-4 py-16 text-center font-sans transition-colors duration-300 mt-20">
       
       <div className="relative mb-8 flex items-center justify-center">
         <div className="absolute w-48 h-48 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none" />
