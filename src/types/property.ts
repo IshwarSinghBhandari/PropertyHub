@@ -16,3 +16,15 @@ export interface Property {
 export interface PropertyCardProps {
   property: Property;
 }
+
+export type Filters = {
+  location: string;
+  bhk: string;
+  type:string;
+};
+
+export interface Props {
+  properties: Property[];
+  loading: boolean;
+  type: string;
+}
