@@ -26,8 +26,8 @@ export function PropertyImageGallery({
               className={` relative h-20 md:h-24 w-full rounded-2xl overflow-hidden  border-2 transition-all duration-300
                 ${
                   selectedImageIndex === index
-                    ? 'border-sky-500'
-                    : 'border-slate-800'
+                    ? 'border-emerald-500 shadow-[0_0_15px_rgba(16,185,129,0.3)]'
+                    : 'border-white/10 hover:border-white/30'
                 }
               `}
             >
@@ -43,7 +43,7 @@ export function PropertyImageGallery({
       </div>
 
       {/* Main Image */}
-      <div className="relative flex-1 rounded-3xl overflow-hidden bg-slate-900 border border-slate-800 shadow-xl group">
+      <div className="relative flex-1 rounded-[2rem] overflow-hidden bg-black/40 border border-white/10 shadow-[0_32px_64px_-16px_rgba(0,0,0,0.5)] backdrop-blur-md group">
         <Image
           src={property.images[selectedImageIndex]}
           alt={`${property.title} - Image ${selectedImageIndex + 1}`}

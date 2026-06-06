@@ -130,7 +130,7 @@ function Banner({ filters, setFilters }: BannerProps) {
                                 </Tabs>
 
                                 {/* BHK chips ------------- */}
-                                <div className="flex items-center gap-2 overflow-x-auto no-scrollbar py-1">
+                                <div className="flex flex-wrap items-center gap-2 py-1">
                                     <span className="text-xs font-bold text-slate-400 uppercase tracking-wider mr-2 hidden md:inline-block">
                                         Rooms:
                                     </span>

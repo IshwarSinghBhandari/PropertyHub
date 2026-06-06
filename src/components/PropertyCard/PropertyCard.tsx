@@ -1,28 +1,19 @@
-"use client";
 
-import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import {
   BedDouble,
   Maximize,
   MapPin,
-  Heart,
   Layers,
 } from "lucide-react";
 import { PropertyCardProps } from "@/types/property";
 import { TYPE_OPTIONS } from "@/constants/filter";
 import { formatPrice } from "@/utils/formatters";
+import FavoriteButton from "../common/FavoriteButton";
 
 export function PropertyCard({ property }: PropertyCardProps) {
-  const [isFavorite, setIsFavorite] = useState(false);
-
   const bhkText = property.bhk > 0 ? `${property.bhk} BHK` : "Plot";
-
-  const handleFavorite = (e: React.MouseEvent) => {
-    e.preventDefault();
-    setIsFavorite(!isFavorite);
-  };
 
   return (
     <Link href={`/property/${property.id}`} className="group block h-full">
@@ -61,16 +52,9 @@ export function PropertyCard({ property }: PropertyCardProps) {
             </div>
 
             {/* favorite ---------------------*/}
-            <button
-              onClick={handleFavorite}
-              className="absolute top-4 right-4 p-2.5 rounded-full backdrop-blur-xl bg-white/10 border border-white/20 text-white hover:scale-110 transition-all duration-300"
-            >
-              <Heart
-                className={`h-4 w-4 transition-all duration-300 ${
-                  isFavorite ? "fill-red-500 text-red-500 scale-110" : ""
-                }`}
-              />
-            </button>
+           <div className="absolute top-4 right-4">
+             <FavoriteButton />
+           </div>
 
             {/* price ---------------*/}
             <div className="absolute left-4 bottom-4">

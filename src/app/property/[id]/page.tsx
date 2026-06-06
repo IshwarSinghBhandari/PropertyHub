@@ -5,13 +5,14 @@ import { useParams } from 'next/navigation'
 import { getPropertyById, getProperties } from '@/utils/propertyAPI'
 import Link from 'next/link'
 import { PropertyCard } from '@/components/PropertyCard/PropertyCard'
-import { Building2, MapPin } from 'lucide-react'
+import { Building2, Heart, MapPin } from 'lucide-react'
 import { PropertyDetailSkeleton } from '@/components/propertyDetails/PropertyDetailSkeleton'
 import { PropertyImageGallery } from '@/components/propertyDetails/PropertyImageGallery'
 import { PropertyInfoDetails } from '@/components/propertyDetails/PropertyInfoDetails'
 import { PropertySidebar } from '@/components/propertyDetails/PropertySidebar'
 import { formatPrice } from '@/utils/formatters'
 import { Property } from '@/types/property'
+import FavoriteButton from '@/components/common/FavoriteButton'
 
 export default function PropertyDetail() {
     const params = useParams()
@@ -71,48 +72,73 @@ export default function PropertyDetail() {
     }
 
     return (
-        <div className="pb-16 bg-background ">
-            {/* Gallery Section with Dark Backdrop to contrast transparent header */}
-            <section className="bg-slate-950  pb-10 border-b border-slate-900 pt-32">
-                <div className="flex justify-between items-end max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-4">
-                    <div className=" max-w-7xlmb-10">
-                        <h1 className="text-3xl sm:text-4xl text-white font-extrabold text-foreground tracking-tight leading-tight mb-2">
+        <div className="pb-16 bg-background">
+            {/* Hero & Gallery Section */}
+            <section className="relative pb-12 pt-32 overflow-hidden">
+                {/* Blurred Background to match home page aesthetic */}
+                <div
+                    className="absolute inset-0 z-0"
+                    style={{
+                        backgroundImage: `url('${property.images?.[0] || '/images/bannerBg.png'}')`,
+                        backgroundSize: "cover",
+                        backgroundPosition: "center",
+                        filter: "blur(30px)",
+                        transform: "scale(1.1)",
+                    }}
+                />
+                <div className="absolute inset-0 bg-black/50 z-0" />
+                <div className="absolute inset-0 bg-linear-to-b from-black/40 via-black/60 to-background z-0" />
+
+                <div className="relative z-10 flex flex-col md:flex-row md:justify-between md:items-end max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-6 sm:mb-8 gap-5">
+                    <div className="max-w-3xl animate-in fade-in slide-in-from-bottom-4 duration-500">
+                        <div className="inline-flex items-center gap-2 border border-white/20 rounded-full px-3 py-1 sm:px-4 sm:py-1.5 mb-3 sm:mb-4 bg-white/10 backdrop-blur-md">
+                            <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
+                            <span className="text-[10px] sm:text-xs font-medium text-slate-200 tracking-wide">
+                                Verified Property
+                            </span>
+                        </div>
+                        <h1 className="text-2xl sm:text-4xl text-white font-extrabold tracking-tight leading-[1.15] mb-3">
                             {property.title}
                         </h1>
-                        <p className="text-sm sm:text-base text-slate-300 max-w-2xl flex items-center gap-1">
-                            <MapPin className="h-4 w-4 text-green-500" />
-                            <span >{property.location}</span>
+                        <p className="text-sm sm:text-base text-slate-200 flex items-start sm:items-center gap-1.5 font-light">
+                            <MapPin className="h-4 w-4 sm:h-5 sm:w-5 text-emerald-400 shrink-0 mt-0.5 sm:mt-0" />
+                            <span>{property.location}</span>
                         </p>
                     </div>
-                    <div className="px-4 py-2.5 rounded-2xl backdrop-blur-xl bg-white/15 border border-white/20 shadow-2xl">
-                        <div className="text-white font-bold text-[20px]">
-                            {formatPrice(property.price)}
-                            {property.type === "rent" && (
-                                <span className="text-xs font-medium ml-1">/month</span>
-                            )}
+
+                    <div className="flex items-center gap-4 animate-in fade-in slide-in-from-bottom-6 duration-700">
+                        {/* favorite ---------------------*/}
+                       <FavoriteButton />
+
+                        <div className="px-5 py-3 sm:px-6 sm:py-4 rounded-2xl md:rounded-[2rem] backdrop-blur-xl bg-white/10 border border-white/20 shadow-2xl flex flex-col md:items-end animate-in fade-in slide-in-from-bottom-6 duration-700 w-fit">
+                            <div className="text-slate-300 text-[10px] sm:text-xs font-bold mb-0.5 sm:mb-1 uppercase tracking-wider">Asking Price</div>
+                            <div className="text-white font-extrabold text-xl sm:text-2xl">
+                                {formatPrice(property.price)}
+                                {property.type === "rent" && (
+                                    <span className="text-sm sm:text-lg font-medium ml-1 text-slate-300">/month</span>
+                                )}
+                            </div>
                         </div>
                     </div>
+
                 </div>
 
-                {/* divider line -------------*/}
-                <div className="h-px bg-linear-to-r from-transparent via-slate-800 to-transparent mb-6" />
-
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 animate-in fade-in slide-in-from-bottom-8 duration-700 delay-100">
                     <PropertyImageGallery property={property} />
                 </div>
             </section>
 
             {/* Details Section */}
-            <section className="py-12 bg-background">
+            <section className="py-8 md:py-12 bg-background">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className=" flex  gap-8">
+                    <div className="flex flex-col lg:flex-row gap-8">
                         {/* Main Content Column */}
-                        <div className="2">
+                        <div className="w-full lg:w-[65%] xl:w-[70%]">
                             <PropertyInfoDetails property={property} />
                         </div>
 
                         {/* Sidebar Column */}
-                        <div className="1">
+                        <div className="w-full lg:w-[35%] xl:w-[30%]">
                             <PropertySidebar property={property} />
                         </div>
                     </div>

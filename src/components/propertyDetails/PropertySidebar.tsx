@@ -1,55 +1,53 @@
 import { Mail, Calendar, Clock, Tag } from 'lucide-react'
 import { Property } from '@/types/property'
+import { formatPrice } from '@/utils/formatters'
 
 interface PropertySidebarProps {
   property: Property
 }
 
 export function PropertySidebar({ property }: PropertySidebarProps) {
-  const formattedPricePerSqft = new Intl.NumberFormat('en-IN', {
-    style: 'currency',
-    currency: 'INR',
-    maximumFractionDigits: 0,
-  }).format(Math.round(property.price / property.area))
 
   return (
     <div className="space-y-6">
       {/* Contact Card */}
-      <div className="bg-slate-50 dark:bg-slate-900/40 border border-border/40 rounded-3xl p-6 shadow-xs">
-        <h3 className="text-xl font-bold text-foreground mb-1">Interested in this property?</h3>
-        <p className="text-muted-foreground text-xs mb-4">Fill out the form below and our agent will reach out within 24 hours.</p>
+      <div className="bg-white dark:bg-slate-900/40 border border-slate-200 dark:border-slate-800 rounded-3xl md:rounded-[2rem] p-6 md:p-8 shadow-[0_8px_30px_rgb(0,0,0,0.04)] dark:shadow-none transition-all hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)]">
+        <h3 className="text-xl md:text-2xl font-extrabold text-foreground mb-1 md:mb-2">Interested?</h3>
+        <p className="text-slate-500 dark:text-slate-400 text-xs md:text-sm mb-5 md:mb-6 leading-relaxed">Fill out the form below and our agent will reach out within 24 hours.</p>
         
-        <div className="space-y-3">
+        <div className="space-y-3 md:space-y-4">
           <input
             type="email"
             placeholder="Your email address"
-            className="w-full h-12 bg-background border border-border/80 focus:border-emerald-500 focus:ring-4 focus:ring-emerald-500/10 rounded-xl px-4 text-sm outline-none transition-all text-foreground"
+            className="w-full h-12 md:h-14 bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 focus:border-emerald-500 focus:ring-4 focus:ring-emerald-500/10 rounded-xl md:rounded-2xl px-4 md:px-5 text-sm outline-none transition-all text-foreground font-medium placeholder:text-slate-400 placeholder:font-normal"
           />
           <input
             type="tel"
             placeholder="Your phone number"
-            className="w-full h-12 bg-background border border-border/80 focus:border-emerald-500 focus:ring-4 focus:ring-emerald-500/10 rounded-xl px-4 text-sm outline-none transition-all text-foreground"
+            className="w-full h-12 md:h-14 bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 focus:border-emerald-500 focus:ring-4 focus:ring-emerald-500/10 rounded-xl md:rounded-2xl px-4 md:px-5 text-sm outline-none transition-all text-foreground font-medium placeholder:text-slate-400 placeholder:font-normal"
           />
-          <button className="w-full h-12 bg-emerald-600 hover:bg-emerald-500 text-white font-bold rounded-xl transition-all shadow-xs cursor-pointer flex items-center justify-center gap-2 border-0">
-            <Mail className="w-4 h-4" />
-            <span>Schedule Tour</span>
+          <button className="w-full h-12 md:h-14 bg-emerald-500 hover:bg-emerald-600 text-white font-bold rounded-xl md:rounded-2xl transition-all shadow-[0_8px_20px_-6px_rgba(16,185,129,0.5)] cursor-pointer flex items-center justify-center gap-2 border-0 mt-1 md:mt-2">
+            <Mail className="w-4 h-4 md:w-5 md:h-5" />
+            <span className="text-sm md:text-base">Schedule Tour</span>
           </button>
-          <button className="w-full h-12 border border-border/85 text-foreground bg-transparent hover:bg-slate-100 dark:hover:bg-slate-800 font-semibold rounded-xl transition-all cursor-pointer">
+          <button className="w-full h-12 md:h-14 border-2 border-slate-200 dark:border-slate-800 text-slate-700 dark:text-slate-300 bg-transparent hover:bg-slate-50 dark:hover:bg-slate-800/50 hover:border-slate-300 dark:hover:border-slate-700 font-bold rounded-xl md:rounded-2xl transition-all cursor-pointer text-sm md:text-base">
             Ask a Question
           </button>
         </div>
       </div>
 
       {/* Spec Box */}
-      <div className="bg-slate-50 dark:bg-slate-900/40 border border-border/40 rounded-3xl p-6 shadow-xs">
-        <h3 className="text-lg font-bold text-foreground mb-4">Property Overview</h3>
-        <div className="space-y-4 text-sm">
-          <div className="flex justify-between items-center pb-3 border-b border-border/40">
-            <span className="text-muted-foreground flex items-center gap-2">
-              <Calendar className="w-4 h-4 text-muted-foreground/80 shrink-0" />
+      <div className="bg-white dark:bg-slate-900/40 border border-slate-200 dark:border-slate-800 rounded-3xl md:rounded-[2rem] p-6 md:p-8 shadow-[0_8px_30px_rgb(0,0,0,0.04)] dark:shadow-none transition-all hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)]">
+        <h3 className="text-lg md:text-xl font-extrabold text-foreground mb-5 md:mb-6">Property Overview</h3>
+        <div className="space-y-4 md:space-y-5 text-xs md:text-sm">
+          <div className="flex justify-between items-center pb-3 md:pb-4 border-b border-slate-100 dark:border-slate-800">
+            <span className="text-slate-500 dark:text-slate-400 flex items-center gap-2 md:gap-2.5 font-medium">
+              <div className="p-1 md:p-1.5 rounded-lg bg-slate-50 dark:bg-slate-800">
+                <Calendar className="w-3.5 h-3.5 md:w-4 md:h-4 text-emerald-500 shrink-0" />
+              </div>
               <span>Listed on</span>
             </span>
-            <span className="text-foreground font-semibold">
+            <span className="text-foreground font-bold text-sm md:text-base">
               {new Date(property.createdAt).toLocaleDateString('en-IN', {
                 day: 'numeric',
                 month: 'short',
@@ -57,19 +55,23 @@ export function PropertySidebar({ property }: PropertySidebarProps) {
               })}
             </span>
           </div>
-          <div className="flex justify-between items-center pb-3 border-b border-border/40">
-            <span className="text-muted-foreground flex items-center gap-2">
-              <Clock className="w-4 h-4 text-muted-foreground/80 shrink-0" />
+          <div className="flex justify-between items-center pb-3 md:pb-4 border-b border-slate-100 dark:border-slate-800">
+            <span className="text-slate-500 dark:text-slate-400 flex items-center gap-2 md:gap-2.5 font-medium">
+              <div className="p-1 md:p-1.5 rounded-lg bg-slate-50 dark:bg-slate-800">
+                <Clock className="w-3.5 h-3.5 md:w-4 md:h-4 text-emerald-500 shrink-0" />
+              </div>
               <span>Property ID</span>
             </span>
-            <span className="text-foreground font-semibold">{property.id}</span>
+            <span className="text-foreground font-bold text-sm md:text-base">{property.id}</span>
           </div>
           <div className="flex justify-between items-center">
-            <span className="text-muted-foreground flex items-center gap-2">
-              <Tag className="w-4 h-4 text-muted-foreground/80 shrink-0" />
+            <span className="text-slate-500 dark:text-slate-400 flex items-center gap-2 md:gap-2.5 font-medium">
+              <div className="p-1 md:p-1.5 rounded-lg bg-slate-50 dark:bg-slate-800">
+                <Tag className="w-3.5 h-3.5 md:w-4 md:h-4 text-emerald-500 shrink-0" />
+              </div>
               <span>Price per sqft</span>
             </span>
-            <span className="text-foreground font-semibold">{formattedPricePerSqft}</span>
+            <span className="text-foreground font-bold text-sm md:text-base">{formatPrice(Math.round(property.price / property.area))}</span>
           </div>
         </div>
       </div>
