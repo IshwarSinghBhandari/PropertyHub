@@ -18,7 +18,7 @@ export function PropertyCard({ property }: PropertyCardProps) {
   return (
     <Link href={`/property/${property.id}`} className="group block h-full">
       <article className="relative h-full overflow-hidden rounded-[28px] border border-border/40 bg-card transition-all duration-700 hover:-translate-y-2 hover:border-primary/20 hover:shadow-[0_25px_80px_rgba(0,0,0,0.12)]">
-   
+
         {/* Image section ---------------------------*/}
         <div className="relative overflow-hidden">
           <div className="relative aspect-4/3">
@@ -52,9 +52,9 @@ export function PropertyCard({ property }: PropertyCardProps) {
             </div>
 
             {/* favorite ---------------------*/}
-           <div className="absolute top-4 right-4">
-             <FavoriteButton />
-           </div>
+            <div className="absolute top-4 right-4">
+              <FavoriteButton />
+            </div>
 
             {/* price ---------------*/}
             <div className="absolute left-4 bottom-4">

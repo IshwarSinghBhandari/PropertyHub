@@ -130,9 +130,9 @@
     @apply font-sans;
   }
 }
-/* Thin scrollbar */
+/*  scrollbar */
 .thin-scrollbar {
-  scrollbar-width: thin; /* Firefox */
+  scrollbar-width: thin;
   scrollbar-color: rgb(71 85 105) transparent;
 }
 
@@ -145,10 +145,10 @@
 }
 
 .thin-scrollbar::-webkit-scrollbar-thumb {
-  background: rgb(71 85 105); /* slate-600 */
+  background: rgb(71 85 105); 
   border-radius: 9999px;
 }
 
 .thin-scrollbar::-webkit-scrollbar-thumb:hover {
-  background: rgb(100 116 139); /* slate-500 */
+  background: rgb(100 116 139); 
 }
