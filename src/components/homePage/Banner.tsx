@@ -82,7 +82,7 @@ function Banner({ filters, setFilters }: BannerProps) {
                             {/* location input -----------------*/}
                             <div
                                 onClick={() => locationRef.current?.focus()}
-                                className="relative flex items-center bg-slate-50 border border-slate-200 hover:border-slate-300 focus-within:border-emerald-500 focus-within:ring-4 focus-within:ring-emerald-500/10 rounded-2xl px-4 h-20 md:h-16 transition-all group cursor-text gap-4"
+                                className="relative flex items-center bg-slate-50 border border-slate-200 hover:border-slate-300 focus-within:border-emerald-500 focus-within:ring-4 focus-within:ring-emerald-500/10 rounded-2xl px-4 max-sm:px-2 h-20 max-sm:h-16 md:h-16 transition-all group cursor-text gap-4 max-sm:gap-2"
                             >
                                 {/* icon--- */}
                                 <div className="flex items-center justify-center w-10 h-10 rounded-lg bg-emerald-50 group-focus-within:bg-emerald-100 transition">
@@ -105,7 +105,7 @@ function Banner({ filters, setFilters }: BannerProps) {
                             </div>
 
                             {/* buy/rent + BHK row ----------------------*/}
-                            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pt-2 border-t border-slate-100">
+                            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pt-2 max-sm:pt-0 border-t border-slate-100">
 
                                 {/* buy / rent tabs -----------------*/}
                                 <Tabs
@@ -130,7 +130,7 @@ function Banner({ filters, setFilters }: BannerProps) {
                                 </Tabs>
 
                                 {/* BHK chips ------------- */}
-                                <div className="flex flex-wrap items-center gap-2 py-1">
+                                <div className="flex overflow-x-auto no-scrollbar items-center gap-2 py-1 max-sm:pt-3">
                                     <span className="text-xs font-bold text-slate-400 uppercase tracking-wider mr-2 hidden md:inline-block">
                                         Rooms:
                                     </span>
