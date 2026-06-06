@@ -40,7 +40,7 @@ function Banner({ filters, setFilters }: BannerProps) {
         <section
             className="relative min-h-screen flex items-center justify-center overflow-hidden py-20 lg:py-0"
             style={{
-                backgroundImage: "url('/images/bannerBg.png')",
+                backgroundImage: "url('/images/bannerBG.png')",
                 backgroundSize: "cover",
                 backgroundPosition: "center",
             }}
