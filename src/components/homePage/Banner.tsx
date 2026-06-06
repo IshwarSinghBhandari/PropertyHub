@@ -3,9 +3,8 @@ import { useEffect, useRef, useState } from 'react'
 import { MapPin } from 'lucide-react'
 import { Input } from "@/components/ui/input"
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { Badge } from '@/components/ui/badge'
 import { Card, CardContent } from '@/components/ui/card'
-import { BANNER_PROPS, BHK_OPTIONS, TYPE_OPTIONS } from '@/constants/filter'
+import {  BHK_OPTIONS, TYPE_OPTIONS } from '@/constants/filter'
 import { useDebounce } from '@/hooks/useDebounce'
 import { Filters } from '@/types/property'
 
@@ -46,53 +45,50 @@ function Banner({ filters, setFilters }: BannerProps) {
                 backgroundPosition: "center",
             }}
         >
-            {/* Overlays */}
-            <div className="absolute inset-0 bg-black/40" />
-            <div className="absolute inset-0 bg-linear-to-b from-black/20 via-black/30 to-black/70" />
+            {/* overlays */}
+            <div className="absolute inset-0 bg-black/30" />
+            <div className="absolute inset-0 bg-linear-to-b from-black/10 via-black/20 to-black/70" />
 
             <div className="relative z-10 w-full max-w-5xl px-4 sm:px-6 pt-[10%]">
 
-                {/* Heading */}
+                {/* heading------------------- */}
                 <div className="text-center max-w-3xl mx-auto mb-10 animate-in fade-in slide-in-from-bottom-4 duration-500">
-                    <Badge className="mb-4 bg-white/10 hover:bg-white/15 backdrop-blur-md text-white border-white/20 px-4 py-1.5 rounded-full text-xs font-medium tracking-wide">
-                        ✨ Trusted by 10,000+ Property Buyers
-                    </Badge>
 
-                    <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-white leading-tight tracking-tight">
-                        Find Your <span className="text-emerald-400 drop-shadow-sm">Dream Home</span>
+                    <div className="inline-flex items-center gap-2 border border-white/15 rounded-full px-4 py-1.5 mb-6">
+                        <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
+                        <span className="text-xs font-medium text-slate-300 tracking-wide">
+                            India's most trusted property platform
+                        </span>
+                    </div>
+
+                    <h1 className="text-4xl sm:text-5xl md:text-[3.5rem] font-extrabold text-white leading-[1.12] tracking-tight">
+                        Your Next Home Is{" "}
+                        <span className="text-emerald-400">One Search Away</span>
                     </h1>
 
-                    <p className="mt-4 text-base sm:text-lg text-slate-200/90 max-w-xl mx-auto font-light">
-                        Buy, Rent & Invest in premium properties across India.
+                    <p className="mt-4 text-base sm:text-lg text-slate-200 max-w-xl mx-auto font-light leading-relaxed">
+                        From cozy studio flats to luxury penthouses - buy, rent or invest
+                        in the property that fits your life.
                     </p>
 
-                    {/* Stats */}
-                    <div className="flex flex-row justify-center items-center gap-8 md:gap-16 mt-8 text-white text-center">
-                        {BANNER_PROPS.map((stat, i, arr) => (
-                            <div key={stat.label} className="flex items-center gap-8 md:gap-16">
-                                <div>
-                                    <p className="text-2xl md:text-3xl font-extrabold tracking-tight">{stat.value}</p>
-                                    <p className="text-[11px] md:text-xs text-slate-300 font-medium mt-0.5 uppercase tracking-wider">
-                                        {stat.label}
-                                    </p>
-                                </div>
-                                {i < arr.length - 1 && <div className="w-px h-6 bg-white/20" />}
-                            </div>
-                        ))}
-                    </div>
+
                 </div>
 
-                {/* Filter Card */}
+                {/* filter Card -------------------*/}
                 <Card className="w-full backdrop-blur-xl bg-white/95 border border-white/20 shadow-[0_32px_64px_-16px_rgba(0,0,0,0.3)] rounded-[2rem] max-md:rounded-[1rem] overflow-hidden">
                     <CardContent className="p-5 sm:p-6 flex flex-col gap-5">
                         <div className="flex flex-col gap-4">
 
-                            {/* Location input */}
+                            {/* location input -----------------*/}
                             <div
                                 onClick={() => locationRef.current?.focus()}
-                                className="relative flex items-center bg-slate-50 border border-slate-200 hover:border-slate-300 focus-within:border-emerald-500 focus-within:ring-4 focus-within:ring-emerald-500/10 rounded-2xl px-4 h-20 md:h-16 transition-all group cursor-text"
+                                className="relative flex items-center bg-slate-50 border border-slate-200 hover:border-slate-300 focus-within:border-emerald-500 focus-within:ring-4 focus-within:ring-emerald-500/10 rounded-2xl px-4 h-20 md:h-16 transition-all group cursor-text gap-4"
                             >
-                                <MapPin className="w-5 h-5 text-slate-400 group-focus-within:text-emerald-600 shrink-0 mr-3 transition-colors" />
+                                {/* icon--- */}
+                                <div className="flex items-center justify-center w-10 h-10 rounded-lg bg-emerald-50 group-focus-within:bg-emerald-100 transition">
+                                    <MapPin className="w-5 h-5 text-slate-400 group-focus-within:text-emerald-600 transition-colors" />
+                                </div>
+
                                 <div className="w-full flex flex-col justify-center text-left max-md:py-2">
                                     <span className="block text-[10px] font-bold text-slate-400 uppercase tracking-wider leading-none">
                                         Location
@@ -108,10 +104,10 @@ function Banner({ filters, setFilters }: BannerProps) {
                                 </div>
                             </div>
 
-                            {/* Buy/Rent + BHK row */}
+                            {/* buy/rent + BHK row ----------------------*/}
                             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pt-2 border-t border-slate-100">
 
-                                {/* Buy / Rent tabs */}
+                                {/* buy / rent tabs -----------------*/}
                                 <Tabs
                                     defaultValue={filters.type}
                                     onValueChange={handleTypeChange}
@@ -133,7 +129,7 @@ function Banner({ filters, setFilters }: BannerProps) {
                                     </TabsList>
                                 </Tabs>
 
-                                {/* BHK chips */}
+                                {/* BHK chips ------------- */}
                                 <div className="flex items-center gap-2 overflow-x-auto no-scrollbar py-1">
                                     <span className="text-xs font-bold text-slate-400 uppercase tracking-wider mr-2 hidden md:inline-block">
                                         Rooms:
@@ -144,8 +140,8 @@ function Banner({ filters, setFilters }: BannerProps) {
                                             type="button"
                                             onClick={() => handleBhkSelect(item)}
                                             className={`h-9 px-4 whitespace-nowrap rounded-xl text-xs font-bold transition-all border ${filters.bhk === item
-                                                    ? "bg-slate-900 text-white border-slate-900 shadow-sm"
-                                                    : "bg-white text-slate-600 border-slate-200 hover:border-slate-300 hover:text-slate-900"
+                                                ? "bg-slate-900 text-white border-slate-900 shadow-sm"
+                                                : "bg-white text-slate-600 border-slate-200 hover:border-slate-300 hover:text-slate-900"
                                                 }`}
                                         >
                                             {item}
