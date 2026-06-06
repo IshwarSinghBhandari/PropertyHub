@@ -11,6 +11,7 @@ import {
   Layers,
 } from "lucide-react";
 import { PropertyCardProps } from "@/types/property";
+import { TYPE_OPTIONS } from "@/constants/filter";
 
 export function PropertyCard({ property }: PropertyCardProps) {
   const [isFavorite, setIsFavorite] = useState(false);
@@ -34,7 +35,7 @@ export function PropertyCard({ property }: PropertyCardProps) {
    
         {/* Image section ---------------------------*/}
         <div className="relative overflow-hidden">
-          <div className="relative aspect-[4/3]">
+          <div className="relative aspect-4/3">
             <Image
               src={property.images[0]}
               alt={property.title}
@@ -44,11 +45,11 @@ export function PropertyCard({ property }: PropertyCardProps) {
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             />
 
-            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
+            <div className="absolute inset-0 bg-linear-to-t from-black/80 via-black/20 to-transparent" />
 
             {/* light sweep ----------------------*/}
             <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 overflow-hidden">
-              <div className="absolute inset-y-0 -left-40 w-32 bg-white/20 blur-2xl rotate-12 group-hover:translate-x-[450px] transition-transform duration-1000" />
+              <div className="absolute inset-y-0 -left-40 w-32 bg-white/20 blur-2xl rotate-12 `group-hover:translate-x-112.5 transition-transform duration-1000" />
             </div>
 
             {/* top badges ------------*/}
@@ -60,7 +61,7 @@ export function PropertyCard({ property }: PropertyCardProps) {
               )}
 
               <span className="px-3 py-1 rounded-full backdrop-blur-xl bg-white/10 border border-white/20 text-white text-[10px] font-medium">
-                {property.type === "buy" ? "For Sale" : "For Rent"}
+                {property.type === TYPE_OPTIONS[0] ? "For Sale" : "For Rent"}
               </span>
             </div>
 

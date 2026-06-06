@@ -1,3 +1,4 @@
+import { BHK_OPTIONS } from "@/constants/filter";
 import properties from "@/data/properties.json";
 
 export async function GET(req: Request) {
@@ -15,7 +16,7 @@ export async function GET(req: Request) {
     );
   }
 
-  if (bhk && bhk !== "ALL") {
+  if (bhk && bhk !== BHK_OPTIONS[0]) {
     result = result.filter((p) => p.bhk === Number(bhk));
   }
 

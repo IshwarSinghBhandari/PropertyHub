@@ -1,5 +1,3 @@
-import React from "react"
-
 export const LINK_GROUP_1 = [
     { name: "Apartments for Sale", href: "/buy" },
     { name: "Villas for Sale", href: "/buy" },
