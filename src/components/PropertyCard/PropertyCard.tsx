@@ -59,7 +59,7 @@ export function PropertyCard({ property }: PropertyCardProps) {
             {/* price ---------------*/}
             <div className="absolute left-4 bottom-4">
               <div className="px-4 py-2.5 rounded-2xl backdrop-blur-xl bg-white/15 border border-white/20 shadow-2xl">
-                <div className="text-white font-bold text-[16px]">
+                <div className="text-white font-bold text-[16px] max-sm:text-[15px]">
                   {formatPrice(property.price)}
                   {property.type === "rent" && (
                     <span className="text-xs font-medium ml-1">/month</span>
@@ -69,7 +69,7 @@ export function PropertyCard({ property }: PropertyCardProps) {
             </div>
 
             {/*  stats--------------------- */}
-            <div className="absolute bottom-4 right-4 flex gap-2">
+            <div className="absolute bottom-4 right-4 flex flex-col gap-2">
               <div className="flex items-center gap-1 px-3 py-1.5 rounded-full backdrop-blur-xl bg-black/30 border border-white/10 text-white text-xs">
                 <BedDouble className="h-3.5 w-3.5" />
                 {bhkText}
@@ -83,7 +83,7 @@ export function PropertyCard({ property }: PropertyCardProps) {
 
             {/* image count ------------------ */}
             {property.images.length > 1 && (
-              <div className="absolute bottom-16 right-4">
+              <div className="absolute bottom-24 right-4">
                 <div className="flex items-center gap-1 px-2.5 py-1 rounded-full backdrop-blur-xl bg-black/40 border border-white/10 text-white text-xs">
                   <Layers className="h-3 w-3" />
                   {property.images.length}
