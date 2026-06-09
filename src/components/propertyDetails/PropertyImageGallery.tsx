@@ -16,7 +16,7 @@ export function PropertyImageGallery({
 
   return (
     <div className="flex gap-4 lg:gap-5 h-[320px] md:h-[420px]">
-      {/* Thumbnails */}
+      {/* thumbnails ---------------*/}
       <div className="w-24 md:w-42 shrink-0 overflow-y-auto pr-3 thin-scrollbar">
         <div className="flex flex-col gap-3">
           {property.images.map((image, index) => (
@@ -42,7 +42,7 @@ export function PropertyImageGallery({
         </div>
       </div>
 
-      {/* Main Image */}
+      {/* main image ---------------*/}
       <div className="relative flex-1 rounded-[2rem] overflow-hidden bg-black/40 border border-white/10 shadow-[0_32px_64px_-16px_rgba(0,0,0,0.5)] backdrop-blur-md group">
         <Image
           src={property.images[selectedImageIndex]}
@@ -55,7 +55,7 @@ export function PropertyImageGallery({
 
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
 
-        {/* Badges */}
+        {/* badges ------------- */}
         <div className="absolute top-4 left-4 md:top-6 md:left-6 flex gap-2.5 z-10">
           {property.featured && (
             <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-amber-500 text-white text-[11px] font-bold uppercase tracking-wider">

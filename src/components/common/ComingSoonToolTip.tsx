@@ -1,6 +1,5 @@
 "use client";
 
-import { ReactNode } from "react";
 import {
   Tooltip,
   TooltipContent,
@@ -8,10 +7,7 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip";
 import { Sparkles } from "lucide-react";
-
-interface ComingSoonTooltipProps {
-  children: ReactNode;
-}
+import { ComingSoonTooltipProps } from "@/types/common";
 
 export default function ComingSoonTooltip({
   children,

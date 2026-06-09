@@ -9,7 +9,7 @@ export async function GET(req: Request) {
   const bhk = searchParams.get("bhk");
   const type = searchParams.get("type");
 
-  //  Get single property by ID
+  //  Get single property by ID -----------------
   if (id) {
     const property = properties.find((p) => p.id === id);
 
@@ -22,7 +22,7 @@ export async function GET(req: Request) {
 
     return Response.json(property);
   }
-  //  Get filtered list
+  //  Get filtered list ---------------------
   let result = properties;
 
   if (location) {
