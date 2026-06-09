@@ -98,6 +98,7 @@ propertyhub/
 │   │   └── formatPrice.ts
 │   │
 │   ├── types/
+|   |   ├──common.ts
 │   │   └── property.ts
 │   │
 │   └── hooks/
