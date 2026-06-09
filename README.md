@@ -6,7 +6,7 @@ A responsive real estate property listing portal built with Next.js, TypeScript,
 
 ## Live Demo
 
-🔗 Add your Vercel URL here
+🔗 https://property-hub-blond-sigma.vercel.app/)
 
 ## GitHub Repository
 
