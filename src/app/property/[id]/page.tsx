@@ -73,9 +73,9 @@ export default function PropertyDetail() {
 
     return (
         <div className="pb-16 bg-background">
-            {/* Hero & Gallery Section */}
+            {/* gallery section ------------------ */}
             <section className="relative pb-12 pt-32 overflow-hidden">
-                {/* Blurred Background to match home page aesthetic */}
+                {/* Blurred Background to match home page  */}
                 <div
                     className="absolute inset-0 z-0"
                     style={{
@@ -128,16 +128,16 @@ export default function PropertyDetail() {
                 </div>
             </section>
 
-            {/* Details Section */}
+            {/* details section ----------------*/}
             <section className="py-8 md:py-12 bg-background">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="flex flex-col lg:flex-row gap-8">
-                        {/* Main Content Column */}
+                        {/* main content col -------------- */}
                         <div className="w-full lg:w-[65%] xl:w-[70%]">
                             <PropertyInfoDetails property={property} />
                         </div>
 
-                        {/* Sidebar Column */}
+                        {/* Sidebar col--------------------- */}
                         <div className="w-full lg:w-[35%] xl:w-[30%]">
                             <PropertySidebar property={property} />
                         </div>
@@ -145,7 +145,7 @@ export default function PropertyDetail() {
                 </div>
             </section>
 
-            {/* Similar Properties */}
+            {/* similar properties part-------------------------- */}
             {relatedProperties.length > 0 && (
                 <section className="py-16 border-t border-border/60 bg-linear-to-b from-transparent to-slate-50/30 dark:to-slate-900/10">
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

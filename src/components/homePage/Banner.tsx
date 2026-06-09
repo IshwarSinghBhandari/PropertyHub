@@ -6,12 +6,7 @@ import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Card, CardContent } from '@/components/ui/card'
 import {  BHK_OPTIONS, TYPE_OPTIONS } from '@/constants/filter'
 import { useDebounce } from '@/hooks/useDebounce'
-import { Filters } from '@/types/property'
-
-interface BannerProps {
-    filters: Filters
-    setFilters: React.Dispatch<React.SetStateAction<Filters>>
-}
+import { BannerProps } from '@/types/property'
 
 function Banner({ filters, setFilters }: BannerProps) {
     const [location, setLocation] = useState<string>("")

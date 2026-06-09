@@ -10,7 +10,7 @@ export function PropertySidebar({ property }: PropertySidebarProps) {
 
   return (
     <div className="space-y-6">
-      {/* Contact Card */}
+      {/* Contact card ------------------*/}
       <div className="bg-white dark:bg-slate-900/40 border border-slate-200 dark:border-slate-800 rounded-3xl md:rounded-[2rem] p-6 md:p-8 shadow-[0_8px_30px_rgb(0,0,0,0.04)] dark:shadow-none transition-all hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)]">
         <h3 className="text-xl md:text-2xl font-extrabold text-foreground mb-1 md:mb-2">Interested?</h3>
         <p className="text-slate-500 dark:text-slate-400 text-xs md:text-sm mb-5 md:mb-6 leading-relaxed">Fill out the form below and our agent will reach out within 24 hours.</p>
@@ -36,7 +36,7 @@ export function PropertySidebar({ property }: PropertySidebarProps) {
         </div>
       </div>
 
-      {/* Spec Box */}
+      {/* spec box ----------------*/}
       <div className="bg-white dark:bg-slate-900/40 border border-slate-200 dark:border-slate-800 rounded-3xl md:rounded-[2rem] p-6 md:p-8 shadow-[0_8px_30px_rgb(0,0,0,0.04)] dark:shadow-none transition-all hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)]">
         <h3 className="text-lg md:text-xl font-extrabold text-foreground mb-5 md:mb-6">Property Overview</h3>
         <div className="space-y-4 md:space-y-5 text-xs md:text-sm">

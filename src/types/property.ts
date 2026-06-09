@@ -28,3 +28,8 @@ export interface Props {
   loading: boolean;
   type: string;
 }
+
+export interface BannerProps {
+    filters: Filters
+    setFilters: React.Dispatch<React.SetStateAction<Filters>>
+}

@@ -11,7 +11,7 @@ export function PropertyInfoDetails({ property }: PropertyInfoDetailsProps) {
 
   return (
     <div className="space-y-8 md:space-y-10">
-      {/* Key Details Grid */}
+      {/* key details ------------- */}
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 md:gap-5">
         <div className="flex items-center gap-4 bg-white dark:bg-slate-900/40 border border-slate-200 dark:border-slate-800 rounded-2xl md:rounded-3xl p-5 md:p-6 transition-all hover:shadow-[0_8px_30px_rgb(0,0,0,0.04)] dark:hover:shadow-none">
           <div className="w-12 h-12 md:w-14 md:h-14 rounded-xl md:rounded-2xl bg-emerald-50 dark:bg-emerald-500/10 text-emerald-500 flex items-center justify-center shrink-0">
@@ -46,13 +46,13 @@ export function PropertyInfoDetails({ property }: PropertyInfoDetailsProps) {
         </div>
       </div>
 
-      {/* Description */}
+      {/* description -------------------*/}
       <div>
         <h2 className="text-xl md:text-2xl font-extrabold text-foreground tracking-tight mb-4 md:mb-5">About the Property</h2>
         <p className="text-slate-600 dark:text-slate-300 leading-relaxed md:leading-loose text-sm md:text-base font-medium">{property.description}</p>
       </div>
 
-      {/* Amenities */}
+      {/* amenities ------------*/}
       <div>
         <h2 className="text-xl md:text-2xl font-extrabold text-foreground tracking-tight mb-4 md:mb-6">Amenities</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-4">
